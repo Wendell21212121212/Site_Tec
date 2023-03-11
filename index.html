@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+   <!-- owl carousel css file cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <title>Site vendas</title>
+</head>
+<body>
+     <header>
+        <div class="header-1">
+            <a href="#" class="logo">
+              <i class="fas fa-laptop"> Site_Tec </i>
+            </a>
+
+            <div class="form-container">
+              <form action="">
+                <input type="search" placeholder="Pesquise produtos" id="pesquisa">
+                <label for="search" class="fas fa-search"></label>
+              </form>
+            </div>
+        </div>    
+        <div class="header-2">
+
+          <div id="menu" class="fas fa-bars"></div>
+          <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#arrival">Chegada</a></li>
+                <li><a href="#featured">Apresentação</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#deal">Negócios</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"  class="fa fa-instagram"></a>
+            <a href="#footer" class="fas fa-phone"></a>
+          </div>
+        </div>
+     </header>
+
+
+     <section class="home" id="home">
+        <div class="home-slider owl-carousel">
+
+            <div class="item">
+              <img src="./img/home_img1.jpg" alt="">
+              <div class="content">
+                <h3>Descontos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Sapiente est iusto accusamus delectus veritatis. 
+                  Sunt architecto voluptates a cupiditate, 
+                  quibusdam voluptatibus! Distinctio unde corrupti dolorum, 
+                  tenetur omnis nulla. Blanditiis, est?
+                </p>
+                <a href="#"><button class="btn">Descontos</button></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="./img/home_img3.jpg" alt="">
+              <div class="content">
+                <h3>Itens da moda</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Sapiente est iusto accusamus delectus veritatis. 
+                  Sunt architecto voluptates a cupiditate, 
+                  quibusdam voluptatibus! Distinctio unde corrupti dolorum, 
+                  tenetur omnis nulla. Blanditiis, est?
+                </p>
+                <a href="#"><button class="btn">Descontos</button></a>
+              </div>
+            </div>
+          
+
+            <div class="item">
+              <img src="./img/home_img2.jpg" alt="">
+              <div class="content">
+                <h3>Aparelhos mais recentes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Sapiente est iusto accusamus delectus veritatis. 
+                  Sunt architecto voluptates a cupiditate, 
+                  quibusdam voluptatibus! Distinctio unde corrupti dolorum, 
+                  tenetur omnis nulla. Blanditiis, est?
+                </p>
+                <a href="#"><button class="btn">Descontos</button></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="./img/home_img4.jpg" alt="">
+              <div class="content">
+                <h3>Produtos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Sapiente est iusto accusamus delectus veritatis. 
+                  Sunt architecto voluptates a cupiditate, 
+                  quibusdam voluptatibus! Distinctio unde corrupti dolorum, 
+                  tenetur omnis nulla. Blanditiis, est?
+                </p>
+                <a href="#"><button class="btn">Descontos</button></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+     </section>
+
+    <section class="arrival" id="arrival">
+          <h1 class="cabecalho"> <span> Novas Chegadas</span></h1>
+      <div class="box-container">
+          <div class="box">
+            <div class="image">
+              <img src="./img/arr_img1.jpg" alt="">
+            </div>
+            <div class="info">
+              <h3>Smart tv</h3>
+              <div class="subInfo">
+                <strong class="price"> R$1000/- <span>R$1500/ -</span> </strong>
+                <div class="stars">
+                  <span class="star" onclick="setRating(1)">&#9733;</span>
+                  <span class="star" onclick="setRating(2)">&#9733;</span>
+                  <span class="star" onclick="setRating(3)">&#9733;</span>
+                  <span class="star" onclick="setRating(4)">&#9733;</span>
+                  <span class="star" onclick="setRating(5)">&#9733;</span>
+                </div>
+                
+                
+  
+              </div>
+            </div>
+            <div class="overlay">
+              <a href="#" style="--i:1;" class="fas fa-heart"></a>
+              <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+              <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          
+          <div class="box">
+            <div class="image">
+              <img src="./img/arr_img2.jpg" alt="">
+            </div>
+            <div class="info">
+              <h3>Video Game</h3>
+              <div class="subInfo">
+                <strong class="price"> R$1000/- <span>R$1500/-</span> </strong>
+                <div class="stars">
+                  <span class="star" onclick="setRating_1(6)">&#9733;</span>
+                  <span class="star" onclick="setRating_1(7)">&#9733;</span>
+                  <span class="star" onclick="setRating_1(8)">&#9733;</span>
+                  <span class="star" onclick="setRating_1(9)">&#9733;</span>
+                  <span class="star" onclick="setRating_1(10)">&#9733;</span>
+                  <p id="message"></p>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+              <a href="#" style="--i:1;" class="fas fa-heart"></a>
+              <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+              <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+      
+
+      <div class="box">
+        <div class="image">
+          <img src="./img/arr_img3.jpg" alt="">
+        </div>
+        <div class="info">
+          <h3>Itens da Moda</h3>
+          <div class="subInfo">
+            <strong class="price"> R$1000/- <span>R$1500/-</span> </strong>
+            <div class="stars">
+                <span class="star" onclick="setRating_2(11)">&#9733;</span>
+                <span class="star" onclick="setRating_2(12)">&#9733;</span>
+                <span class="star" onclick="setRating_2(13)">&#9733;</span>
+                <span class="star" onclick="setRating_2(14)">&#9733;</span>
+                <span class="star" onclick="setRating_2(15)">&#9733;</span>
+            </div>
+          </div>
+        </div>  
+        <div class="overlay">
+          <a href="#" style="--i:1;" class="fas fa-heart"></a>
+          <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+          <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="./img/arr_img4.jpg" alt="">
+        </div>
+        <div class="info">
+          <h3>Celular</h3>
+          <div class="subInfo">
+            <strong class="price"> R$1000/- <span>R$1500/-</span> </strong>
+            <div class="stars">
+              <span class="star" onclick="setRating_3(16)">&#9733;</span>
+              <span class="star" onclick="setRating_3(17)">&#9733;</span>
+              <span class="star" onclick="setRating_3(18)">&#9733;</span>
+              <span class="star" onclick="setRating_3(19)">&#9733;</span>
+              <span class="star" onclick="setRating_3(20)">&#9733;</span>
+            </div>
+          </div>
+        </div>
+        <div class="overlay">
+          <a href="#" style="--i:1;" class="fas fa-heart"></a>
+          <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+          <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="./img/arr_img5.jpg" alt="">
+        </div>
+        <div class="info">
+          <h3>Camisa</h3>
+          <div class="subInfo">
+            <strong class="price"> R$1000/- <span>R$1500/-</span> </strong>
+            <div class="stars">
+                <span class="star" onclick="setRating_4(21)">&#9733;</span>
+                <span class="star" onclick="setRating_4(22)">&#9733;</span>
+                <span class="star" onclick="setRating_4(23)">&#9733;</span>
+                <span class="star" onclick="setRating_4(24)">&#9733;</span>
+                <span class="star" onclick="setRating_4(25)">&#9733;</span>
+            </div>
+          </div>
+        </div>
+        <div class="overlay">
+          <a href="#" style="--i:1;" class="fas fa-heart"></a>
+          <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+          <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="./img/arr_img6.jpg" alt="">
+        </div>
+        <div class="info">
+          <h3>Caixa de som</h3>
+          <div class="subInfo">
+            <strong class="price"> R$1000/- <span>R$1500/-</span> </strong>
+            <div class="stars">
+              <span class="star" onclick="setRating_5(26)">&#9733;</span>
+              <span class="star" onclick="setRating_5(27)">&#9733;</span>
+              <span class="star" onclick="setRating_5(28)">&#9733;</span>
+              <span class="star" onclick="setRating_5(29)">&#9733;</span>
+              <span class="star" onclick="setRating_5(30)">&#9733;</span>
+            </div>
+          </div>
+        </div>
+        <div class="overlay">
+          <a href="#" style="--i:1;" class="fas fa-heart"></a>
+          <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+          <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+    <section class="feature" id="featured">
+
+      <h1 class="cabecalho"> <span>featured product </span> </h1>
+      
+      <div class="row">
+      
+          <div class="image-container">
+      
+              <div class="big-image">
+                  <img src="./img/watch1.jpg" alt="">
+              </div>
+      
+              <div class="small-image">
+                  <img class="image-active" src="./img/watch1.jpg" alt="">
+                  <img src="./img/watch2.jpg" alt="">
+                  <img src="./img/watch3.jpg" alt="">
+                  <img src="./img/watch4.jpg" alt="">
+              </div>
+      
+          </div>
+
+        
+      
+          <div class="content">
+      
+              <h3>smart watches</h3>
+              <div class="stars">
+                <span class="star" onclick="setRating_6(31)">&#9733;</span>
+                <span class="star" onclick="setRating_6(32)">&#9733;</span>
+                <span class="star" onclick="setRating_6(33)">&#9733;</span>
+                <span class="star" onclick="setRating_6(34)">&#9733;</span>
+                <span class="star" onclick="setRating_6(35)">&#9733;</span>
+                  <span>(500+) reviews</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at!</p>
+              <strong class="price">R$1000 <span>R$1500</span> </strong>
+              <a href="#"><button class="btn">buy now</button></a>
+      
+          </div>
+      
+      </div>
+      
+    </section>
+      
+
+    <section class="gallery" id="gallery">
+
+      <h1 class="cabecalho"> <span>Produtos da Galeria</span> </h1>
+      
+      <ul class="controls">
+          <li class="btn button-active" data-filter="all">all</li>
+          <li class="btn" data-filter="phone">phone</li>
+          <li class="btn" data-filter="laptop">laptop</li>
+          <li class="btn" data-filter="headphone">headphone</li>
+          <li class="btn" data-filter="shoes">shoes</li>
+      </ul>
+      
+      <div class="image-container">
+      
+          <div class="box phone">
+              <div class="image">
+                  <img src="./img/g_img1.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>smartphone 1</h3>
+                  <div class="subInfo">
+                      <strong class="price">R$1000</strong>
+                      <div class="stars">
+                        <span class="star" onclick="setRating_7(36)">&#9733;</span>
+                        <span class="star" onclick="setRating_7(37)">&#9733;</span>
+                        <span class="star" onclick="setRating_7(38)">&#9733;</span>
+                        <span class="star" onclick="setRating_7(39)">&#9733;</span>
+                        <span class="star" onclick="setRating_7(40)">&#9733;</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="box phone">
+              <div class="image">
+                  <img src="./img/g_img2.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>smartphones</h3>
+                  <div class="subInfo">
+                      <strong class="price">R$1000</strong>
+                      <div class="stars">
+                        <span class="star" onclick="setRating_8(41)">&#9733;</span>
+                        <span class="star" onclick="setRating_8(42)">&#9733;</span>
+                        <span class="star" onclick="setRating_8(43)">&#9733;</span>
+                        <span class="star" onclick="setRating_8(44)">&#9733;</span>
+                        <span class="star" onclick="setRating_8(45)">&#9733;</span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+      
+          <div class="box laptop">
+              <div class="image">
+                  <img src="./img/g_img3.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>laptop</h3>
+                  <div class="subInfo">
+                      <strong class="price">R$1000</strong>
+                      <div class="stars">
+                          <span class="star" onclick="setRating_9(46)">&#9733;</span>
+                          <span class="star" onclick="setRating_9(47)">&#9733;</span>
+                          <span class="star" onclick="setRating_9(48)">&#9733;</span>
+                          <span class="star" onclick="setRating_9(49)">&#9733;</span>
+                          <span class="star" onclick="setRating_9(50)">&#9733;</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="box shoes">
+              <div class="image">
+                  <img src="./img/g_img4.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>shoes</h3>
+                  <div class="subInfo">
+                      <strong class="price">R$1000</strong>
+                      <div class="stars">
+                        <span class="star" onclick="setRating_10(51)">&#9733;</span>
+                        <span class="star" onclick="setRating_10(52)">&#9733;</span>
+                        <span class="star" onclick="setRating_10(53)">&#9733;</span>
+                        <span class="star" onclick="setRating_10(54)">&#9733;</span>
+                        <span class="star" onclick="setRating_10(55)">&#9733;</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="box laptop">
+              <div class="image">
+                  <img src="./img/g_img5.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>laptop</h3>
+                  <div class="subInfo">
+                      <strong class="price">R$1000</strong>
+                      <div class="stars">
+                        <span class="star" onclick="setRating_11(56)">&#9733;</span>
+                        <span class="star" onclick="setRating_11(57)">&#9733;</span>
+                        <span class="star" onclick="setRating_11(58)">&#9733;</span>
+                        <span class="star" onclick="setRating_11(59)">&#9733;</span>
+                        <span class="star" onclick="setRating_11(60)">&#9733;</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      
+          <div class="box headphone">
+              <div class="image">
+                  <img src="./img/g_img6.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>headphone</h3>
+                  <div class="subInfo">
+                      <strong class="price">R$1000</strong>
+                      <div class="stars">
+                        <span class="star" onclick="setRating_12(61)">&#9733;</span>
+                        <span class="star" onclick="setRating_12(62)">&#9733;</span>
+                        <span class="star" onclick="setRating_12(63)">&#9733;</span>
+                        <span class="star" onclick="setRating_12(64)">&#9733;</span>
+                        <span class="star" onclick="setRating_12(65)">&#9733;</span>
+                      </div>
+                  </div>
+              </div>
+          </div>  
+      
+          <div class="box shoes">
+              <div class="image">
+                  <img src="./img/g_img7.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>shoes</h3>
+                  <div class="subInfo">
+                      <strong class="price">R$1000</strong>
+                      <div class="stars">
+                        <span class="star" onclick="setRating_13(66)">&#9733;</span>
+                        <span class="star" onclick="setRating_13(67)">&#9733;</span>
+                        <span class="star" onclick="setRating_13(68)">&#9733;</span>
+                        <span class="star" onclick="setRating_13(69)">&#9733;</span>
+                        <span class="star" onclick="setRating_13(70)">&#9733;</span>
+                      </div>
+                  </div>
+              </div>
+          </div> 
+      
+          <div class="box headphone">
+              <div class="image">
+                  <img src="./img/g_img8.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>headphone</h3>
+                  <div class="subInfo">
+                      <strong class="price">R$1000</strong>
+                      <div class="stars">
+                        <span class="star" onclick="setRating_14(71)">&#9733;</span>
+                        <span class="star" onclick="setRating_14(72)">&#9733;</span>
+                        <span class="star" onclick="setRating_14(73)">&#9733;</span>
+                        <span class="star" onclick="setRating_14(74)">&#9733;</span>
+                        <span class="star" onclick="setRating_14(75)">&#9733;</span>
+                      </div>
+                  </div>
+              </div>
+          </div> 
+      
+          <div class="box headphone">
+              <div class="image">
+                  <img src="./img/g_img9.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h3>headphone</h3>
+                  <div class="subInfo">
+                      <strong class="price">R$1000</strong>
+                      <div class="stars">
+                        <span class="star" onclick="setRating_15(76)">&#9733;</span>
+                        <span class="star" onclick="setRating_15(77)">&#9733;</span>
+                        <span class="star" onclick="setRating_15(78)">&#9733;</span>
+                        <span class="star" onclick="setRating_15(79)">&#9733;</span>
+                        <span class="star" onclick="setRating_15(80)">&#9733;</span>
+                      </div>
+                  </div>
+              </div>
+          </div> 
+      
+      </div>
+      
+    </section>
+    <!-- jquery cdn link  -->
+
+    <section class="deal" id="deal">
+        <h1 class="cabecalho"> <span> Melhores negócios </span> </h1>
+
+        <div class="box-container">
+          <div class="box">
+            <img src="./img/deal1.jpg" alt="">
+            <div class="content">
+              <h3>Laptop mais recente</h3>
+              <p>Até 25% de desconto na primeira compra</p>
+              <a href="#"><button class="btn">Explorar</button></a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="./img/deal2.jpg" alt="">
+            <div class="content">
+              <h3>Headphone mais recente</h3>
+              <p>Até 25% de desconto na primeira compra</p>
+              <a href="#"><button class="btn">Explorar</button></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="icons-container">
+
+            <div class="icons">
+              <i class="fas fa-user-clock"></i>
+              <h3>24 x 7 suporte </h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse et voluptas neque reiciendis alias velit eaque totam odio blanditiis dicta pariatur, tempora eum ipsa consequuntur deleniti, libero sit similique.
+                
+              </p>
+            </div>
+        
+
+          <div class="icons">
+            <i class="fas fa-money-check-alt"></i>
+            <h3>Pagamento fácil</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse et voluptas neque reiciendis alias velit eaque totam odio blanditiis dicta pariatur, tempora eum ipsa consequuntur deleniti, libero sit similique.
+              
+            </p>
+          </div>
+
+          <div class="icons">
+            <i class="fas fa-box"></i>
+            <h3>Troca em 10 dias</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse et voluptas neque reiciendis alias velit eaque totam odio blanditiis dicta pariatur, tempora eum ipsa consequuntur deleniti, libero sit similique.
+              
+            </p>
+          </div>
+        </div>  
+   
+
+
+    </section>
+
+    <hr>
+    <section class="footer" id="footer">
+
+      <div class="box-container">
+        <div class="box">
+          <a href="#" class="logo"><i class="fas fa-shopping-bag"></i>Shopping</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolorum ipsum quam qui doloribus iste delectus corporis explicabo aut recusandae ab, magni aliquam labore. Magni veniam numquam tenetur error necessitatibus!
+
+          </p>
+        </div>
+
+        <div class="box">
+        <h3>links</h3>
+          <a href="#">home</a>
+          <a href="#">Chegada</a>
+          <a href="#">Apresentação</a>
+          <a href="#">Galeria</a>
+          <a href="#">Negócios</a>
+        </div>
+
+        <div class="box">
+          <div class="contato">
+            <h3>Nossos Contatos</h3>
+              <p>
+                <i class="fas fa-home">
+
+                </i>
+                Rivieira,Nakamura,
+                Brasil
+              </p>
+
+              <p>
+                <i class="fas fa-phone">
+
+                </i>
+                +55 1140028922
+              </p>
+
+              <p>
+                <i class="fas fa-envelope">
+                    
+                </i>
+                nossosite@gmail.com
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="credit"> Criado por <span> Wendell Paranhos </span> | Todos os direitos reservados</h1>
+    </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- owl carousel js file cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="main.js"></script>
+</body>
+</html>
