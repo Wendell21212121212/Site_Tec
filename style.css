@@ -757,6 +757,27 @@ header .header-2.header-active{
   .feature .row .content .btn{
     margin: 2rem 0;
     }
+
+   .home .home-slider .owl-carousel img{
+    width: auto;
+   }
+
+   .home .home-slider .item .content p{
+    text-align:left;
+    font-size: 2.5rem;
+
+   }
+
+
+   .home .home-slider .item .content .btn{
+    margin: 2rem;
+   }
+
+   .home .home-slider .item .content h3{
+    font-size: 3rem;
+    margin: 2rem;
+    text-transform: uppercase;
+   }
     
     
 
